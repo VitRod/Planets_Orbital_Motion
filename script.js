@@ -49,3 +49,11 @@ function setCenterPlanet (planet) {
 function drawBackground (context) {
     context.clearRect(0, 0, width, height);
 }
+
+function reverseDrawPath() {
+
+}
+
+function getRandomColor() {
+    
+}
