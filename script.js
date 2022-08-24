@@ -34,5 +34,10 @@ function speedDown() {
 }
 
 function speedDefault() {
-    
+
+}
+
+function Point (x,y) {
+    this.x = x;
+    this.y = y;
 }
