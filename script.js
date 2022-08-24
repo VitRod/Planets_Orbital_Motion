@@ -12,3 +12,11 @@ var drawPath = false;
 var speedRation = 1.0;
 
 var zoom = 1.0;
+
+function zoomIn() {
+     
+}
+
+function zoomOut(){
+
+}
