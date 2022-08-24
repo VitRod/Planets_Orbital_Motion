@@ -20,3 +20,19 @@ function zoomIn() {
 function zoomOut(){
 
 }
+
+function zoomDefault() {
+
+}
+
+function speedUp() {
+
+}
+
+function speedDown() {
+
+}
+
+function speedDefault() {
+    
+}
