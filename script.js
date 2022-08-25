@@ -14,7 +14,8 @@ var speedRation = 1.0;
 var zoom = 1.0;
 
 function zoomIn() {
-     
+    drawBackground(context);
+    zoom /= 2;
 }
 
 function zoomOut(){
