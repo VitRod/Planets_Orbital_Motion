@@ -34,7 +34,8 @@ function speedUp() {
 }
 
 function speedDown() {
-
+    drawBackground(context);
+    speedRatio /= 2;
 }
 
 function speedDefault() {
