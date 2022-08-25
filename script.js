@@ -9,7 +9,7 @@ var mercury, venus, earth, moon, jupiter, io, europa, ganymede, callisto, sun;
 
 var drawPath = false;
 
-var speedRation = 1.0;
+var speedRatio = 1.0;
 
 var zoom = 1.0;
 
