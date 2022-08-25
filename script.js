@@ -39,7 +39,8 @@ function speedDown() {
 }
 
 function speedDefault() {
-
+    drawBackground(context);
+    speedRatio = 1.0;
 }
 
 function Point (x,y) {
