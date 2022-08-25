@@ -24,11 +24,13 @@ function zoomOut(){
 }
 
 function zoomDefault() {
-
+    drawBackground(context);
+    zoom = 1.0;
 }
 
 function speedUp() {
-
+    drawBackground(context);
+    speedRatio *= 2;
 }
 
 function speedDown() {
