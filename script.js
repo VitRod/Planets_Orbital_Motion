@@ -49,7 +49,8 @@ function Point (x,y) {
 }
 
 function setCenterPlanet (planet) {
-
+    drawBackground(context);
+    centerPlanet = planet;
 }
 
 function drawBackground (context) {
