@@ -19,7 +19,8 @@ function zoomIn() {
 }
 
 function zoomOut(){
-
+    drawBackground(context);
+    zoom *= 2;
 }
 
 function zoomDefault() {
