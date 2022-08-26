@@ -72,11 +72,11 @@ function getRandomColor() {
 }
 
 window.onload = function (){
+    canvas = document.getElementById("area");
 
 
 
 
 
 
-    
 }
