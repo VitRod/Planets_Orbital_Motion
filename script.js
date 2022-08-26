@@ -70,3 +70,13 @@ function getRandomColor() {
     }
     return color;
 }
+
+window.onload = function (){
+
+
+
+
+
+
+    
+}
