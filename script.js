@@ -81,7 +81,10 @@ window.onload = function (){
     height = document.body.clientHeight;
     canvas.height = height;
 
-
+function normalizePlanetsize (){
+    var radius = r * (width / 10.0 / zoom);
+    return radius;
+}
 
 
 
