@@ -76,6 +76,12 @@ window.onload = function (){
     notes =  document.getElementById("fps");
     context = canvas.getContext('2d');
 
+    width = document.body.clientWidth;
+    canvas.width = width;
+    height = document.body.clientHeight;
+    canvas.height = height;
+
+
 
 
 
