@@ -140,6 +140,13 @@ window.onload = function (){
             context.shadowOffsetY = 0;
             context.shadowBlur = 0;
 
+            context.beginPath();
+            context.arc(p.x, p.y, this.bodySize, 0, 2 * Math.PI, false);
+            context.fill();
+            context.closePath();
+
+            context.stroke();
+
         }
 
     };
