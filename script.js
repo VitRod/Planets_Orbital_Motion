@@ -131,6 +131,11 @@ window.onload = function (){
                 context.shadowColor = "#ddd";
             }
 
+            context.beginPath();
+            context.arc(p.x, p.y, this.bodySize, 0, 2 * Math.PI, false);
+            context.fill();
+            context.closePath();
+
         }
 
     };
