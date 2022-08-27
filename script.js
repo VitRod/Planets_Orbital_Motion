@@ -92,9 +92,12 @@ window.onload = function (){
     };
 
     function Planet (name, color, bodySize, orbitRadius, orbitPeriod) {
+        this.addPlanet = function (planet) {
+            this.planets.push(planet);
+        }   
 
+        
 
-    }
     
 
 
