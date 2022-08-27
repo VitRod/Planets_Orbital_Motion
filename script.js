@@ -147,7 +147,15 @@ window.onload = function (){
 
             context.stroke();
 
-        }
+        };
+
+        this.draw = function (context, p) {
+            var centerPos = centerPlanet.calculatePos(p);
+            var pos= this.calculatePos(p);
+
+
+
+        };
 
     };
 
