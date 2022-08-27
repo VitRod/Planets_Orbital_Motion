@@ -193,6 +193,28 @@ window.onload = function (){
         }
     };
 
+    mercury = new Planet("mercury", "orange", 0.382, 0.387, 0.241);
+    venus = new Planet("venus", "green", 0.949, 0.723, 0.615);
+    earth = new Planet("earth", "#33f", 1.0, 1.0, 1.0);
+    moon = new Planet("moon", "gray", 0.2, 0.14, 0.075);
+    earth.addPlanet(moon);
+
+    var f = 0.1;
+    var h = 1 / 1500.0;
+    var g = 1 / 72.0;
+
+    jupiter = new Planet("jupiter", "gray", 4.0, 5.203, 11.86);
+    io = new Planet("io", getRandomColor(), 3.6*f, 421*h, 1.769*g);
+    europa = new Planet("europa", getRandomColor(), 3.1*f, 671*h, 3.551*g);
+    ganymede = new Planet("ganymede", getRandomColor(), 5.3*f, 1070*h, 7.154*g);
+    callisto = new Planet("callisto", getRandomColor(), 4.8*f, 1882*h, 16.689*g);
+    jupiter.addPlanet(io);
+    jupiter.addPlanet(europa);
+    jupiter.addPlanet(ganymede);
+    jupiter.addPlanet(callisto);
+
+
+
 
     
 
