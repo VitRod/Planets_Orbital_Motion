@@ -213,13 +213,14 @@ window.onload = function (){
     jupiter.addPlanet(ganymede);
     jupiter.addPlanet(callisto);
 
-
-
+    sun = new Planet("sun", "#ff2", 14.0, 0, 0);
+    sun.addPlanet(mercury);
+    sun.addPlanet(venus);
+    sun.addPlanet(earth);
+    sun.addPlanet(jupiter);
+    addAsteroidBelt(sun, 350);
 
     
-
-
-
             function draw() {
                 var time = (new Date()).getTime();
                 // if (renderTime != null) showFps(1000 / (time - renderTime));
