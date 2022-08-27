@@ -171,6 +171,11 @@ window.onload = function (){
             }
         };
 
+        this.calculateSpeed = function (period) {
+            var  speed = period == 0.0 ? 0.0 : speedRatio * 1 / (60.0 * 24.0 * 2 * period);
+            return speed;
+        };
+
 
     };
 
