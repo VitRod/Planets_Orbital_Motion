@@ -94,7 +94,7 @@ window.onload = function (){
     function Planet (name, color, bodySize, orbitRadius, orbitPeriod) {
         this.addPlanet = function (planet) {
             this.planets.push(planet);
-        }   
+        };
 
     drawBackground(context);
          this.calculatePos = function (p) {
@@ -124,8 +124,45 @@ window.onload = function (){
             context.fillStyle = this.color;
             context.strokeStyle = this.color;
 
+            if(this.bodySize >= 2.0){ 
+                
+            }
+
+        }
+
+    };
+
+
+    
 
 
 
-
+            function draw() {
+                var time = (new Date()).getTime();
+                // if (renderTime != null) showFps(1000 / (time - renderTime));
+                renderTime = time;
+        
+                if (!drawPath)
+                    drawBackground(context);
+        
+                drawPlanets(context);
+        
+                requestRedraw();
+            }
+        
+            function drawBackground(context) {
+                context.clearRect(0, 0, width, height);
+            }
+        
+            function drawPlanets(context) {
+                sun.draw(context, new Point(width / 2, height / 2));
+            }
+        
+            function requestRedraw() {
+                window.requestAnimationFrame(draw);
+            }
+        
+            setCenterPlanet(sun);
+            requestRedraw();
+    
 }
