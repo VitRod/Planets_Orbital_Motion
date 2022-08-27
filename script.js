@@ -165,7 +165,12 @@ window.onload = function (){
 
         };
 
-        
+        this.drawChildren = function (context, p) {
+            for (var i = 0; i < this.planets.length; i++) {
+                this.planets[i].draw(context, p);
+            }
+        };
+
 
     };
 
