@@ -116,6 +116,10 @@ window.onload = function (){
             return point;
          };
 
+         this.drawSelf = function (context, p) {
+            if (p.x + this.bodySize < 0 || p.x - this.bodySize >= context.canvas.width) return;
+            if (p.y + this.bodySize < 0 || p.y - this.bodySize >= context.canvas.height) return;
+
     
 
 
