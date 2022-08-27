@@ -96,7 +96,11 @@ window.onload = function (){
             this.planets.push(planet);
         }   
 
-        
+    drawBackground(context);
+         this.calculatePos = function (p) {
+
+            
+         }
 
     
 
