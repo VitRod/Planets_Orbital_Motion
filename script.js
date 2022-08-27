@@ -176,6 +176,15 @@ window.onload = function (){
             return speed;
         };
 
+        this.name = name;
+        this.color = color;
+        this.bodySize = normalizePlanetSize(bodySize);
+        this.orbitRadius = normalizeOrbitRadius(orbitRadius);
+        this.orbitPeriod = orbitPeriod;
+        this.orbitSpeed = this.calculateSpeed(orbitPeriod);
+        this.planets = [];
+    };
+
 
     };
 
