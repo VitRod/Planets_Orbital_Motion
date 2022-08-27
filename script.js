@@ -120,7 +120,9 @@ window.onload = function (){
             if (p.x + this.bodySize < 0 || p.x - this.bodySize >= context.canvas.width) return;
             if (p.y + this.bodySize < 0 || p.y - this.bodySize >= context.canvas.height) return;
 
-    
+            context.lineWidth = 0.5;
+            context.fillStyle = this.color;
+            context.strokeStyle = this.color;
 
 
 
