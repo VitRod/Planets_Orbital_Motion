@@ -98,8 +98,12 @@ window.onload = function (){
 
     drawBackground(context);
          this.calculatePos = function (p) {
+            if(drawPath)
+                this.bodySize = 1 / zoom;
+            else
+                this.bodySize = normalizePlanetSize(bodySize);
 
-            
+                
          }
 
     
