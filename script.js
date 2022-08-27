@@ -136,6 +136,10 @@ window.onload = function (){
             context.fill();
             context.closePath();
 
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = 0;
+            context.shadowBlur = 0;
+
         }
 
     };
