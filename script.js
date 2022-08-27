@@ -136,7 +136,26 @@ window.onload = function (){
             context.fill();
             context.closePath();
 
-        }
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = 0;
+            context.shadowBlur = 0;
+
+            context.beginPath();
+            context.arc(p.x, p.y, this.bodySize, 0, 2 * Math.PI, false);
+            context.fill();
+            context.closePath();
+
+            context.stroke();
+
+        };
+
+        this.draw = function (context, p) {
+            var centerPos = centerPlanet.calculatePos(p);
+            var pos= this.calculatePos(p);
+
+
+
+        };
 
     };
 
