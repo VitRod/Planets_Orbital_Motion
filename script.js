@@ -110,7 +110,7 @@ window.onload = function (){
             }
 
             this.orbitSpeed = this.calculateSpeed(orbitPeriod);
-            
+            var angle = renderTime * this.orbitSpeed;
 
 
          };
