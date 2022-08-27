@@ -153,7 +153,12 @@ window.onload = function (){
             var centerPos = centerPlanet.calculatePos(p);
             var pos= this.calculatePos(p);
 
-
+            if (["moon", "io", "europa", "ganymede", "callisto"].indexOf(this.name) >= 0) {
+                //notes.textContent = "pos.x : " +  moon.calculatePos(p).x + ", centerPos.x : " + pos.x + ", width/2 : " + (width/2);
+            } else {
+                pos.x -= centerPos.x - width/2;
+                pos.y -= centerPos.y - height/2;
+            }
 
         };
 
