@@ -91,6 +91,12 @@ window.onload = function (){
         return size;
     };
 
+    function Planet (name, color, bodySize, orbitRadius, orbitPeriod) {
+
+
+    }
+    
+
 
 
 
