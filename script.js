@@ -103,7 +103,8 @@ window.onload = function (){
             else
                 this.bodySize = normalizePlanetSize(bodySize);
 
-                
+            this.orbitRadius = normalizeOrbitRadius(orbitRadius);
+
          }
 
     
