@@ -185,7 +185,12 @@ window.onload = function (){
         this.planets = [];
     };
 
-
+    function addAsteroidBelt (planet, count) {
+        for (var i = 0; i < count; i++) {
+             var radius = 2.06 + Math.random() * (3.27 - 2.06);
+             planet.addPlanet(new Planet("asteroidBelt", getRandomColor(),
+             0.1 * Math.random(), radius, radius * 2));
+        }
     };
 
 
