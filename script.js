@@ -111,6 +111,7 @@ window.onload = function (){
 
             this.orbitSpeed = this.calculateSpeed(orbitPeriod);
             var angle = renderTime * this.orbitSpeed;
+            var point = new Point(this.orbitRadius * Math.cos(angle) + p.x, this.orbitRadius * Math.sin(angle) + p.y);
 
 
          };
