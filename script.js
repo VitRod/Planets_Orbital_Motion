@@ -125,7 +125,10 @@ window.onload = function (){
             context.strokeStyle = this.color;
 
             if(this.bodySize >= 2.0){ 
-                
+                context.shadowOffsetX = 2;
+                context.shadowOffsetY = 2;
+                context.shadowBlur = 2;
+                context.shadowColor = "#ddd";
             }
 
         }
