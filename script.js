@@ -105,7 +105,13 @@ window.onload = function (){
 
             this.orbitRadius = normalizeOrbitRadius(orbitRadius);
 
-         }
+            if(this.orbitSpeed == 0.0){
+                return p;
+            }
+
+
+
+         };
 
     
 
