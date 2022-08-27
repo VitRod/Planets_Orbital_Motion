@@ -81,11 +81,21 @@ window.onload = function (){
     height = document.body.clientHeight;
     canvas.height = height;
 
-function normalizePlanetsize (){
-    var radius = r * (width / 10.0 / zoom);
-    return radius;
-}
+    function normalizeOrbitRadius(r) {
+        var radius = r * (width / 10.0 / zoom);
+        return radius;
+    };
 
+    function normalizePlanetSize(r) {
+        var size = Math.log(r + 1) * (width / 100.0 / zoom);
+        return size;
+    };
+
+    function Planet (name, color, bodySize, orbitRadius, orbitPeriod) {
+
+
+    }
+    
 
 
 
