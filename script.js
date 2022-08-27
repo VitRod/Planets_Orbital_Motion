@@ -109,6 +109,8 @@ window.onload = function (){
                 return p;
             }
 
+            this.orbitSpeed = this.calculateSpeed(orbitPeriod);
+            
 
 
          };
