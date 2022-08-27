@@ -94,7 +94,7 @@ window.onload = function (){
     function Planet (name, color, bodySize, orbitRadius, orbitPeriod) {
         this.addPlanet = function (planet) {
             this.planets.push(planet);
-        }   
+        };
 
     drawBackground(context);
          this.calculatePos = function (p) {
@@ -111,14 +111,58 @@ window.onload = function (){
 
             this.orbitSpeed = this.calculateSpeed(orbitPeriod);
             var angle = renderTime * this.orbitSpeed;
+            var point = new Point(this.orbitRadius * Math.cos(angle) + p.x, this.orbitRadius * Math.sin(angle) + p.y);
 
-
+            return point;
          };
+
+         this.drawSelf = function (context, p) {
+            if (p.x + this.bodySize < 0 || p.x - this.bodySize >= context.canvas.width) return;
+            if (p.y + this.bodySize < 0 || p.y - this.bodySize >= context.canvas.height) return;
+
+            context.lineWidth = 0.5;
+            context.fillStyle = this.color;
+            context.strokeStyle = this.color;
+
+            if(this.bodySize >= 2.0){ 
+                
+            }
+
+        }
+
+    };
+
 
     
 
 
 
-
-
+            function draw() {
+                var time = (new Date()).getTime();
+                // if (renderTime != null) showFps(1000 / (time - renderTime));
+                renderTime = time;
+        
+                if (!drawPath)
+                    drawBackground(context);
+        
+                drawPlanets(context);
+        
+                requestRedraw();
+            }
+        
+            function drawBackground(context) {
+                context.clearRect(0, 0, width, height);
+            }
+        
+            function drawPlanets(context) {
+                sun.draw(context, new Point(width / 2, height / 2));
+            }
+        
+            function requestRedraw() {
+                window.requestAnimationFrame(draw);
+            }
+        
+            setCenterPlanet(sun);
+            requestRedraw();
+    
 }
