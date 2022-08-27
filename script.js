@@ -159,8 +159,13 @@ window.onload = function (){
                 pos.x -= centerPos.x - width/2;
                 pos.y -= centerPos.y - height/2;
             }
+            
+            this.drawSelf(context, pos);
+            this.drawChildren(context, pos);
 
         };
+
+        
 
     };
 
